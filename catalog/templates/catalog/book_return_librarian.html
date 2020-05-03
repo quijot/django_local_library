@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Return: {{ book_instance.book.title }}</h1>
+<p>Borrower: {{ book_instance.borrower }}</p>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    <input type="submit" value="Return book">
+</form>
+{% endblock %}
