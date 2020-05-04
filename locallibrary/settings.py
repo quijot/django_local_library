@@ -143,4 +143,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-ALLOWED_HOSTS = ["https://mdn-locallibrary.herokuapp.com/", "127.0.0.1"]
+ALLOWED_HOSTS = ["mdn-locallibrary.herokuapp.com/", "127.0.0.1"]
